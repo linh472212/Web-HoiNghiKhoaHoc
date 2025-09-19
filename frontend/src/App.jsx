@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         {/* Trang công cộng */}
-      {/* //  <Route element={<PublicLayout />}> */}
+      {/* //  <Route element={<PublicLayoutAS />}> */}
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
        {/* // </Route> */}
