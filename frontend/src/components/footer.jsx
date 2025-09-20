@@ -1,5 +1,5 @@
-// src/components/Footer.jsx
 import React from "react";
+import { Facebook, Twitter, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,21 +10,32 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="text-2xl">🏛️</div>
-              <span className="text-lg font-bold text-white">Conference 2025</span>
+              <span className="text-lg font-bold text-white">
+                Conference 2025
+              </span>
             </div>
             <p className="text-gray-400 text-sm mb-4">
               Nền tảng quản lý hội nghị khoa học hàng đầu Việt Nam
             </p>
             <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center cursor-pointer hover:bg-blue-700 transition-colors">
-                <span className="text-xs">f</span>
-              </div>
-              <div className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center cursor-pointer hover:bg-blue-500 transition-colors">
-                <span className="text-xs">t</span>
-              </div>
-              <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center cursor-pointer hover:bg-blue-800 transition-colors">
-                <span className="text-xs">in</span>
-              </div>
+              <a
+                href="#"
+                className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+              >
+                <Facebook className="w-4 h-4 text-white" />
+              </a>
+              <a
+                href="#"
+                className="w-8 h-8 bg-sky-400 rounded-full flex items-center justify-center hover:bg-sky-500 transition-colors"
+              >
+                <Twitter className="w-4 h-4 text-white" />
+              </a>
+              <a
+                href="#"
+                className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors"
+              >
+                <Linkedin className="w-4 h-4 text-white" />
+              </a>
             </div>
           </div>
 
@@ -32,10 +43,26 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Hội nghị</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Giới thiệu</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Lịch trình</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Diễn giả</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Địa điểm</a></li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Giới thiệu
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Lịch trình
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Diễn giả
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Địa điểm
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -43,10 +70,26 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Tác giả</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Hướng dẫn nộp bài</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Template</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Tiêu chí đánh giá</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Hạn nộp bài</a></li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Hướng dẫn nộp bài
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Template
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Tiêu chí đánh giá
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Hạn nộp bài
+                </a>
+              </li>
             </ul>
           </div>
 

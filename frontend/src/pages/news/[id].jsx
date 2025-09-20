@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { Calendar, User } from "lucide-react";
-import Navbar from "@/components/navbar";
+import DefaultLayout from "@/components/layout/DefaultLayout";
 
 // Dữ liệu mẫu
 const newsData = [
@@ -50,38 +50,40 @@ const NewsDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 p-6">
-        <Navbar />
-      <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-2xl p-8 border border-gray-100">
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">{article.title}</h1>
+    <DefaultLayout>
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 p-6">
+        <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-2xl p-8 border border-gray-100">
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">
+            {article.title}
+          </h1>
 
-        <div className="flex items-center space-x-6 text-gray-500 text-sm mb-6">
-          <span className="flex items-center space-x-1">
-            <Calendar className="w-4 h-4" />
-            <span>{article.date}</span>
-          </span>
-          <span className="flex items-center space-x-1">
-            <User className="w-4 h-4" />
-            <span>{article.author}</span>
-          </span>
-        </div>
+          <div className="flex items-center space-x-6 text-gray-500 text-sm mb-6">
+            <span className="flex items-center space-x-1">
+              <Calendar className="w-4 h-4" />
+              <span>{article.date}</span>
+            </span>
+            <span className="flex items-center space-x-1">
+              <User className="w-4 h-4" />
+              <span>{article.author}</span>
+            </span>
+          </div>
 
-        <p className="text-gray-700 leading-relaxed whitespace-pre-line">
-          {article.content}
-        </p>
+          <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+            {article.content}
+          </p>
 
-        <div className="mt-8">
-          <Link
-            to="/news"
-            className="inline-block text-blue-600 hover:text-blue-700 font-medium"
-          >
-            ← Quay lại danh sách tin tức
-          </Link>
+          <div className="mt-8">
+            <Link
+              to="/news"
+              className="inline-block text-blue-600 hover:text-blue-700 font-medium"
+            >
+              ← Quay lại danh sách tin tức
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+    </DefaultLayout>
   );
 };
 
 export default NewsDetail;
-
